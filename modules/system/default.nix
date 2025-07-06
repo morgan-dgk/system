@@ -22,7 +22,9 @@
 
   time.timeZone = "Australia/Sydney";
 
-  programs.tcpdump.enable = true;
+  programs.zsh.enable = true;
+
+  users.defaultUserShell = pkgs.zsh;
 
   environment.systemPackages = with pkgs; [
     curl
