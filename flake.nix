@@ -19,10 +19,11 @@
 
     niri.url = "github:sodiboo/niri-flake";
 
-
     walker.url = "github:abenz1267/walker";
 
     bzmenu.url = "github:e-tho/bzmenu";
+
+    iwmenu.url = "github:e-tho/iwmenu";
 
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";

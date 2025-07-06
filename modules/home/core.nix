@@ -32,9 +32,9 @@
       unzip
       dnsutils
       pciutils
-      iwmenu
       bitwarden-cli
-      inputs.bzmenu
+      inputs.iwmenu.packages.${pkgs.system}.default
+      inputs.bzmenu.packages.${pkgs.system}.default
       ( pkgs.callPackage ../../pkgs/pragmata-pro {} )
     ];
   };
