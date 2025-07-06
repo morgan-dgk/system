@@ -54,7 +54,7 @@
           };
           modules = [
             ./hosts/dell-xps13
-            ./modules/niri.nix
+            ./modules/niri
 
             home-manager.nixosModules.home-manager
             {
