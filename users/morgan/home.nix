@@ -24,6 +24,14 @@
     };
   };
 
+  programs.keychain = {
+    enable = true;
+    enableZshIntegration = true;
+    keys = [
+      "nixos-ed25519.id"
+    ];
+  };
+
   programs.zsh = {
     enable = true;
     oh-my-zsh = {
