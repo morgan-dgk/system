@@ -26,7 +26,6 @@
 
   programs.zsh = {
     enable = true;
-    enableSyntaxHighlighting = true;
     oh-my-zsh = {
       enable = true;
       plugins = ["git"];
