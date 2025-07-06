@@ -19,6 +19,7 @@
     extraConfig = {
        init.defaultBranch = "main";
        pull.rebase = true;
+       push.autoSetupRemote = true;
        merge.conflictStyle = "zdiff3";
     };
   };
