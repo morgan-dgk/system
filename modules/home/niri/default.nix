@@ -14,7 +14,6 @@
           "Mod+space".action = spawn "walker";
           "Mod+Shift+E".action = quit {skip-confirmation = true;};
           "Mod+Shift+F".action = fullscreen-window;
-          
         }
       ];
   };

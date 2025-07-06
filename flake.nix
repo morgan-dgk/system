@@ -2,7 +2,6 @@
   description = "NixOS configuration";
 
   inputs = {
-  
     # Default to unstable branch
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-25.05";
@@ -29,7 +28,6 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
   };
 
   outputs = inputs @ {
@@ -37,21 +35,20 @@
     nixpkgs-stable,
     home-manager,
     ...
-  }: 
-{
+  }: {
     nixosConfigurations = {
       nixos = let
         system = "x86_64-linux";
         username = "morgan";
-      in 
+      in
         nixpkgs.lib.nixosSystem rec {
-        inherit system;
-        specialArgs = {
-          inherit inputs;
-          inherit username;
-          pkgs-stable = import nixpkgs-stable {
-            inherit system;
-          };
+          inherit system;
+          specialArgs = {
+            inherit inputs;
+            inherit username;
+            pkgs-stable = import nixpkgs-stable {
+              inherit system;
+            };
           };
           modules = [
             ./hosts/dell-xps13

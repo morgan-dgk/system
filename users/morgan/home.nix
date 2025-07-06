@@ -9,7 +9,7 @@
   ];
 
   home.sessionVariables = {
-     EDITOR = "vim";
+    EDITOR = "vim";
   };
 
   programs.git = {
@@ -17,10 +17,10 @@
     userName = "morgan-dgk";
     userEmail = "mdgk95@proton.me";
     extraConfig = {
-       init.defaultBranch = "main";
-       pull.rebase = true;
-       push.autoSetupRemote = true;
-       merge.conflictStyle = "zdiff3";
+      init.defaultBranch = "main";
+      pull.rebase = true;
+      push.autoSetupRemote = true;
+      merge.conflictStyle = "zdiff3";
     };
   };
 }

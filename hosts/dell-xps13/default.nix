@@ -32,7 +32,7 @@
   networking.useDHCP = false;
   networking.interfaces.wlp165s0.useDHCP = true;
 
-  networking.nameservers = [ "9.9.9.9" ];
+  networking.nameservers = ["9.9.9.9"];
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
