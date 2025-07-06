@@ -1,11 +1,11 @@
 {pkgs, ...}: {
   imports = [
-    ../../home/core.nix
-    ../../home/shell
-    ../../home/niri
-    ../../home/walker
-    ../../home/zen-browser
-    ../../home/programs
+    ../../modules/home/core.nix
+    ../../modules/home/shell
+    ../../modules/home/niri
+    ../../modules/home/walker
+    ../../modules/home/zen-browser
+    ../../modules/home/programs
   ];
 
   home.sessionVariables = {

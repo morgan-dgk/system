@@ -5,7 +5,7 @@
   ...
 }: {
   imports = [
-    ../../modules/system.nix
+    ../../modules/system
 
     # Include the results of the hardware scan.
     ./hardware-configuration.nix

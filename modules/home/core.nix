@@ -35,7 +35,7 @@
       iwmenu
       bitwarden-cli
       inputs.bzmenu
-      ( pkgs.callPackage ../pkgs/pragmata-pro {} ) 
+      ( pkgs.callPackage ../../pkgs/pragmata-pro {} )
     ];
   };
 
