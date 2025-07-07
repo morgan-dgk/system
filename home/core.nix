@@ -37,7 +37,7 @@
       inputs.alejandra.defaultPackage.${system}
       inputs.iwmenu.packages.${pkgs.system}.default
       inputs.bzmenu.packages.${pkgs.system}.default
-      (pkgs.callPackage ../../pkgs/pragmata-pro {})
+      (pkgs.callPackage ../pkgs/pragmata-pro {})
     ];
   };
 
