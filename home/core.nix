@@ -18,6 +18,7 @@
 
     sessionVariables = {
       EDITOR = "vim";
+      NIXOS_OZONE_WL = "1";
     };
 
     stateVersion = "25.05";
@@ -26,6 +27,7 @@
       tree
       jq
       yq-go
+      brightnessctl
       vim
       zip
       xz
