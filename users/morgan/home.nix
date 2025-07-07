@@ -1,10 +1,13 @@
-{pkgs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   imports = [
     ../../modules/home/core.nix
     ../../modules/home/shell
     ../../modules/home/niri
     ../../modules/home/walker
-    ../../modules/home/zen-browser
     ../../modules/home/programs
   ];
 
