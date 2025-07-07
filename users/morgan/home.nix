@@ -7,7 +7,6 @@
     ../../home/core.nix
     ../../home/shell
     ../../home/niri
-    ../../home/walker
     ../../home/programs
   ];
 
