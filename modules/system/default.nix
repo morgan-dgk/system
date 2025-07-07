@@ -4,6 +4,7 @@
   username,
   ...
 }: {
+  nixpkgs.config.allowUnfree = true;
   users.users.${username} = {
     isNormalUser = true;
     description = username;
@@ -23,6 +24,19 @@
   time.timeZone = "Australia/Sydney";
 
   programs.zsh.enable = true;
+
+  programs.gamescope = {
+    enable = true;
+    capSysNice = true;
+  };
+
+  programs.steam = {
+    enable = true;
+    extraCompatPackages = with pkgs; [
+      proton-ge-bin
+    ];
+    gamescopeSession.enable = true;
+  };
 
   users.defaultUserShell = pkgs.zsh;
 
