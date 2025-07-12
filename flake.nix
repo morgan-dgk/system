@@ -16,6 +16,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nvim = {
+      url = "./home/nvim";
+    };
+
     niri.url = "github:sodiboo/niri-flake";
 
     walker.url = "github:abenz1267/walker";

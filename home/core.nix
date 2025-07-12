@@ -4,12 +4,11 @@
   pkgs,
   ...
 }: {
-  fonts.fontconfig.enable = true;
-
   imports = [
     inputs.niri.homeModules.niri
     inputs.walker.homeManagerModules.default
     inputs.zen-browser.homeModules.beta
+    inputs.nvim.homeModule
   ];
 
   home = {
@@ -17,7 +16,6 @@
     homeDirectory = "/home/${username}";
 
     sessionVariables = {
-      EDITOR = "vim";
       NIXOS_OZONE_WL = "1";
     };
 
@@ -28,7 +26,6 @@
       jq
       yq-go
       brightnessctl
-      vim
       zip
       xz
       unzip
@@ -43,6 +40,8 @@
     ];
   };
 
+  fonts.fontconfig.enable = true;
+  nvim.enable = true;
   programs.home-manager.enable = true;
 
   services = {
