@@ -56,6 +56,7 @@
             };
           };
           modules = [
+            ./core
             ./hosts/dell-xps13
             ./modules/niri
 
