@@ -18,6 +18,10 @@
       };
     };
 
+    spawn-at-startup = [
+      {command = ["${lib.getExe pkgs.gammastep}" "-l" "-33:151"];}
+    ];
+
     binds = with config.lib.niri.actions; let
       sh = spawn "sh" "-c";
     in {
