@@ -14,6 +14,7 @@
   users.defaultUserShell = pkgs.zsh;
 
   environment.systemPackages = with pkgs; [
+    wireguard-tools
     curl
     git
     wget
