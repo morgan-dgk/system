@@ -23,6 +23,7 @@
 
     packages = with pkgs; [
       tree
+      file
       jq
       yq-go
       brightnessctl
