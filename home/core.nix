@@ -25,6 +25,7 @@
       tree
       file
       jq
+      pavucontrol
       yq-go
       brightnessctl
       zip
