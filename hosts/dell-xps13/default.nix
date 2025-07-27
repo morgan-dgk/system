@@ -6,6 +6,7 @@
 }: {
   imports = [
     ../../modules/system
+    ../../modules/connectivity.mod.nix
 
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
