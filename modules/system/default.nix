@@ -4,6 +4,9 @@
   username,
   ...
 }: {
+  imports = [
+    ./virtualization.mod.nix
+  ];
   users.users.${username} = {
     isNormalUser = true;
     description = username;
