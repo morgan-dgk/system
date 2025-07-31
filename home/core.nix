@@ -22,6 +22,7 @@
     stateVersion = "25.05";
 
     packages = with pkgs; [
+      devenv
       tree
       file
       jq
