@@ -21,6 +21,8 @@
     systemd-boot.enable = true;
   };
 
+  xdg.portal.wlr.enable = true;
+
   hardware.bluetooth.enable = true;
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;

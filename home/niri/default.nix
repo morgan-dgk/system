@@ -4,6 +4,9 @@
   pkgs,
   ...
 }: {
+  imports = [
+    ./waybar.mod.nix
+  ];
   programs.niri.package = pkgs.niri-stable;
 
   programs.niri.settings = {
@@ -19,6 +22,7 @@
     };
 
     spawn-at-startup = [
+      {command = ["waybar"];}
       {command = ["${lib.getExe pkgs.gammastep}" "-l" "-33:151"];}
     ];
 
