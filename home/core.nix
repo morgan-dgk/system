@@ -43,6 +43,12 @@
     ];
   };
 
+  xdg.portal.enable = true;
+  xdg.portal.extraPortals = [
+    pkgs.xdg-desktop-portal-gnome
+    pkgs.gnome-keyring
+  ];
+
   fonts.fontconfig.enable = true;
   nvim.enable = true;
   programs.home-manager.enable = true;
