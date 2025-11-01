@@ -49,6 +49,20 @@
     pkgs.gnome-keyring
   ];
 
+  xdg.portal.config = {
+    common = {
+      default = [
+        "gtk"
+      ];
+    };
+
+    niri = {
+      "org.freedesktop.impl.portal.ScreenCast" = [
+        "xdg-desktop-portal-gnome"
+      ];
+    };
+  };
+
   fonts.fontconfig.enable = true;
   nvim.enable = true;
   programs.home-manager.enable = true;
