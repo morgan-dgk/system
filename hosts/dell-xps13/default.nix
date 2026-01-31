@@ -7,6 +7,8 @@
   imports = [
     ../../modules/system
     ../../modules/connectivity.mod.nix
+    ../../modules/games.mod.nix
+    ../../modules/xwayland.mod.nix
 
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
