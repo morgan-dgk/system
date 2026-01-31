@@ -16,7 +16,7 @@
 
   programs.gamescope = {
     enable = true;
-    capSysNice = true;
+    # capSysNice = true;
   };
 
   programs.steam = {
@@ -24,6 +24,7 @@
     gamescopeSession.enable = true;
     extraPackages = with pkgs; [
       gamescope
+      xwayland-run
     ];
     extraCompatPackages = with pkgs; [
       proton-ge-bin

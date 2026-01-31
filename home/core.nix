@@ -11,6 +11,27 @@
     inputs.nvim.homeModule
   ];
 
+  nixpkgs.overlays = [
+    (final: prev: {
+      xwlsat-run = final.writeShellScriptBin "xwlsat-run" ''
+        n=0
+        while [ -e "/tmp/.X11-unix/X$n" ]; do
+          n=$((n + 1))
+        done
+
+        xwayland-satellite :$n &
+
+        xwlsat_pid=$!
+
+        export DISPLAY=:$n
+
+        DISPLAY=:$n "$@"
+
+        kill $xwlsat_pid
+      '';
+    })
+  ];
+
   home = {
     inherit username;
     homeDirectory = "/home/${username}";
@@ -40,6 +61,8 @@
       inputs.iwmenu.packages.${pkgs.system}.default
       inputs.bzmenu.packages.${pkgs.system}.default
       (pkgs.callPackage ../pkgs/pragmata-pro {})
+      xwayland-satellite
+      xwlsat-run
     ];
   };
 
