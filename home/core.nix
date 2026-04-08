@@ -63,6 +63,7 @@
       (pkgs.callPackage ../pkgs/pragmata-pro {})
       xwayland-satellite
       xwlsat-run
+      discord
     ];
   };
 
