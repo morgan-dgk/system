@@ -7,8 +7,8 @@
 }: let
   url = "https://fsd.it/shop/fonts/pragmatapro/";
   hashAlgo = "sha256";
-  name = "PragmataPro0.9.8-svlok.zip";
-  version = "0.9.8";
+  name = "PragmataPro0.903";
+  version = "0.903.0";
 in
   stdenv.mkDerivation {
     nativeBuildInputs = [unzip];
@@ -16,8 +16,8 @@ in
     pname = "pragmata-pro";
     inherit version;
     src = requireFile {
-      name = "PragmataPro0.9-8svlok.zip";
-      sha256 = "3178e90cd5320333038fb09d3972da83e50e194d3702d00c8ecad5b5f5e7579d";
+      name = "PragmataPro0.903.0.zip";
+      sha256 = "770400e9d4f3d40fe8893af9ae1f784f6ffad241fc4189128c4d3c4615fb7727";
       url = "https://fsd.it/shop/fonts/pragmatapro/";
       message = ''
         PragmataPro is a (beautiful) licensed typeface.
@@ -29,7 +29,7 @@ in
           nix-prefetch-url --type ${hashAlgo} file:///path/to/${name}
       '';
     };
-    sourceRoot = "PragmataPro0.9";
+    sourceRoot = "PragmataPro0.903";
 
     installPhase = ''
       mkdir -p $out/share/fonts/truetype/
